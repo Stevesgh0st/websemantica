@@ -3,87 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Una página introductoria sobre la semántica en la lingüística">
-    <title>Semántica: El Estudio del Significado</title>
+    <title>Encabezado con Navegación</title>
     <style>
+        /* Estilos para el encabezado */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
 
         header {
-            background-color: #35495e;
+            background-color: #00c610;
             color: white;
-            padding: 10px 20px;
-            text-align: center;
+            padding: 20px;
         }
 
-        h1 {
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
             margin: 0;
         }
 
-        section {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
         }
 
-        h2 {
-            color: #35495e;
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
         }
 
-        p {
-            line-height: 1.6;
+        nav ul li a:hover {
+            text-decoration: underline;
         }
 
-        footer {
-            margin-top: 20px;
-            text-align: center;
-            color: #777;
+        /* Estilos para el contenido */
+        main {
+            padding: 20px;
         }
+
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Semántica: El Estudio del Significado</h1>
+        <h1>Universidad de Córdoba</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section>
-        <h2>¿Qué es la semántica?</h2>
-        <p>
-            La <strong>semántica</strong> es una rama de la lingüística que se encarga del estudio del significado en el lenguaje. Mientras la <em>sintaxis</em> analiza la estructura gramatical de las oraciones y la <em>fonología</em> se ocupa de los sonidos del lenguaje, la semántica se centra en cómo las palabras, frases y oraciones transmiten significados.
-        </p>
-        <p>
-            La semántica es crucial para comprender no solo el lenguaje humano, sino también cómo las ideas y conceptos son compartidos y entendidos entre las personas.
-        </p>
-    </section>
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Bienvenido a mi sitio web.</p>
+        </section>
 
-    <section>
-        <h2>Tipos de semántica</h2>
-        <h3>1. Semántica Léxica</h3>
-        <p>
-            La <strong>semántica léxica</strong> estudia el significado de las palabras individualmente y las relaciones entre ellas. Este tipo de semántica explora conceptos como:
-        </p>
-        <ul>
-            <li><strong>Sinonimia</strong>: palabras que tienen significados similares, como "alegría" y "felicidad".</li>
-            <li><strong>Antónimos</strong>: palabras con significados opuestos, como "grande" y "pequeño".</li>
-            <li><strong>Hiponimia</strong>: relación entre una palabra más general (hiperónimo) y sus términos más específicos (hipónimos), como "flor" y "rosa".</li>
-        </ul>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>Aquí ofrecemos una variedad de servicios.</p>
+        </section>
 
-        <h3>2. Semántica Composicional</h3>
-        <p>
-            La <strong>semántica composicional</strong> analiza cómo los significados de las palabras individuales se combinan para formar el significado de frases y oraciones. La idea central es que el significado de una oración completa depende del significado de sus partes.
-        </p>
-    </section>
+        <section id="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Conoce más sobre nuestra historia.</p>
+        </section>
 
-    <footer>
-        <p>Creado por Carlos Steven Morales&copy; 2024</p>
-    </footer>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos a través de nuestro correo electrónico.</p>
+        </section>
+    </main>
 
 </body>
 </html>
